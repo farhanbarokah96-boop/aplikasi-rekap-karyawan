@@ -1,0 +1,34 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 400" width="800" height="400">
+  <defs>
+    <linearGradient id="bgGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#0E5B9E"/>
+      <stop offset="50%" stop-color="#0B4B87"/>
+      <stop offset="100%" stop-color="#073766"/>
+    </linearGradient>
+    <filter id="shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="4" dy="12" stdDeviation="10" flood-color="#000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background Layer -->
+  <rect width="800" height="400" fill="url(#bgGrad)"/>
+
+  <!-- Logo Group -->
+  <g transform="translate(100, 100)" filter="url(#shadow)">
+    <!-- Icon Box Emblem -->
+    <rect x="0" y="0" width="200" height="200" rx="44" ry="44" fill="none" stroke="#FFFFFF" stroke-width="24"/>
+    
+    <!-- Outer/Inner Ribbon Curves (Huruf B & R Khas BRI) -->
+    <!-- Lengkung Atas B -->
+    <path d="M 52 50 C 75 35, 140 35, 148 72 C 154 100, 120 106, 92 106 L 52 50 Z" fill="#FFFFFF"/>
+    
+    <!-- Lengkung Bawah B & Sabetan R -->
+    <path d="M 52 100 L 98 106 C 135 106, 156 125, 146 155 C 136 180, 80 180, 52 152 Z" fill="#FFFFFF"/>
+
+    <!-- Pemisah Diagonal 45 Derajat -->
+    <line x1="40" y1="40" x2="160" y2="160" stroke="#0B4B87" stroke-width="16" stroke-linecap="round"/>
+
+    <!-- Tulisan BRI Resmi -->
+    <text x="240" y="152" font-family="'Arial Black', 'Helvetica Neue', sans-serif" font-weight="900" font-size="140" fill="#FFFFFF" letter-spacing="4">BRI</text>
+  </g>
+</svg>
